@@ -2,7 +2,8 @@
 @import "variables";
 //------------------------------------------HomePage-------------------------------------------------------
 [data-page-name="homePage"] {
-
+    &.homePage{
+    }
 }
 
 // Small devices (landscape phones, 576px and up)

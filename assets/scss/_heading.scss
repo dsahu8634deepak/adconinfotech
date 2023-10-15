@@ -1,17 +1,4 @@
-.heading {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: linear-gradient(to right, $theme1, #3333ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    position: relative;
-}
-.heading {
-    
-}
+
 
 
 // Small devices (landscape phones, 576px and up)
@@ -36,32 +23,16 @@
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin heading-mixin-max-xs() {
-    .heading {
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-align: center;
-    }
+
 }
 
 // Small devices (landscape phones, less than 768px)
 @mixin heading-mixin-max-sm() {
-    .heading {
-        font-size: 19px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-align: center;
-    }
+
 }
 
 // Medium devices (tablets, less than 992px)
 @mixin heading-mixin-max-md() {
-    .heading {
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-align: center;
-    }
 }
 
 // Large devices (desktops, less than 1200px)
