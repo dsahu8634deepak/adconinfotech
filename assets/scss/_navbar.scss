@@ -1,0 +1,170 @@
+.header {
+    z-index: 5;
+    transition: all .3s ease-in-out;
+    & .navbar {
+        // background-image: unset;
+        transition: all .3s ease-in-out;
+        & .headerTop {
+            & a {
+                color: $theme2;
+                transition: all 0.3s ease-in-out;
+                & span {
+                    & img {
+                        transition: all 0.3s ease-in-out;
+                        height: 16px;
+                        width: 16px;
+                        margin-right: 5px;
+                    }
+                }
+                &:hover {
+                    color: lighten($theme2, 10);
+                    & span {
+                        & img {
+                            filter: brightness(2);
+                        }
+                    }
+                }
+            }
+        }
+        & .navbar-brand {
+            height: 60px;
+        }
+        & .navbar-nav {
+        transition: all .5s ease-in-out;
+            & .nav-item {
+                .nav-link {
+                    text-decoration: none;
+                    letter-spacing: 0.8px;
+                    transition: 0.7s;
+                    font-size: 16px;
+                    &:before {
+                        background-image: linear-gradient(90deg, $theme2 0%, $theme1 100%);
+                        bottom: 3px;
+                        content: "";
+                        height: 2px;
+                        left: 0;
+                        position: absolute;
+                        width: 0;
+                        -webkit-transition: all 0.3s ease-out 0s;
+                        transition: all 0.3s ease-out 0s;
+                    }
+                    &:hover {
+                        color: lighten($theme2, 10) !important;
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                    &.active {
+                        &::before{
+                            width: 100%;
+                        }
+                        color: lighten($theme2, 10) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header.active {
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 15%) !important;
+    background: linear-gradient(180deg, $theme2, $theme1);
+    transition: all 0.5s !important;
+    & .headerTop {
+        & a {
+            color: $white !important;
+            & span {
+                & img {
+                    filter: brightness(100);
+                }
+            }
+            &:hover {
+                color: lighten($theme2, 15) !important;
+            }
+        }
+    }
+    & .navbar-brand {
+        // &.color_logo {
+        //     display: none !important;
+        // }
+        &.white_logo {
+            display: block !important;
+        }
+        & img {
+            filter: brightness(1000) sepia(100);
+        }
+    }
+    & .nav-link {
+        color: $white !important;
+        &::before {
+            background-image: linear-gradient(90deg, $theme2 0%, $white 100%) !important;
+        }
+    }
+    & .toogle_btn {
+        & i {
+            color: $white !important;
+        }
+    }
+    & .cr_btn {
+        color: $white !important;
+    }
+}
+
+.always-nav-active {
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247) !important;
+    background-image: linear-gradient(90deg, $theme1 0%, $theme2 100%) !important;
+    & .navbar-brand {
+        // &.color_logo {
+        //     display: none !important;
+        // }
+        &.white_logo {
+            display: block !important;
+        }
+    }
+    & .nav-link {
+        color: $white !important;
+        &::before {
+            background-image: linear-gradient(90deg, $black 0%, $white 100%) !important;
+        }
+    }
+    & .toogle_btn {
+        & i {
+            color: $white !important;
+        }
+    }
+}
+
+.offcanvas {
+    width: 300px;
+    & .offcanvas-header {
+        box-shadow: 0px 0px 10px rgb($black, 0.15);
+    }
+    & .offcanvas-body {
+        & .navbar-nav {
+            & .nav-item {
+                & .nav-link {
+                    color: #343434;
+                    transition: all 0.3s;
+                    font-size: 14px;
+                    &:hover {
+                        color: $theme1 !important;
+                    }
+                }
+                & .dropdown-menu {
+                    & .dropdown-item {
+                        transition: all 0.3s;
+                        &:hover {
+                            background-color: $theme1 !important;
+                            color: $theme2 !important;
+                        }
+                    }
+                    &.show {
+                        transform: translate3d(0px, 53px, 0px) !important;
+                    }
+                }
+            }
+        }
+    }
+}

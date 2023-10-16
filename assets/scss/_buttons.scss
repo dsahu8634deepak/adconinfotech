@@ -11,9 +11,11 @@
         background: $white !important;
         border-color: $theme1;
     }
-}$btn-bg:$theme2;
-$btn-color:$theme1;
-$btn-width: 200px;
+}
+
+$btn-bg:$theme1;
+$btn-color:$theme2;
+$btn-width: 220px;
 $btn-height:35px;
 .cr_btn{
     position: relative;
@@ -30,7 +32,7 @@ $btn-height:35px;
     line-height: $btn-height;
     box-sizing: border-box;
     transition: 0.8s ease-in-out;
-    padding: 4px 16px;
+    padding: 4px 12px;
     z-index: 1;
     &:before,
     &::after {
