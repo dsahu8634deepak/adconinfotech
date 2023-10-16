@@ -34,6 +34,18 @@
       }
     }
   }
+  .gamebody {
+    .fontsgame{
+      font-family: 'Odibee Sans', sans-serif;
+
+    }
+    & .container-fluid{
+      background: rgb(15 8 0);
+      & p{
+        color: rgba(255,255,255,.5);
+      }
+    }
+  }
   
   a{
     text-decoration: none;

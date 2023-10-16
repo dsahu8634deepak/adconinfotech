@@ -17,14 +17,12 @@
         gap: 1rem;
 
         & .subHeadinggame {
-            font-family: "Square Peg";
             font-style: italic;
             font-size: 18px;
             font-weight: 400;
             color: $theme2;
         }
         & .gameHeading {
-            font-family: bb;
             font-size: 40px;
             -webkit-text-stroke-color: $theme1;
             -webkit-text-fill-color: white;
@@ -60,9 +58,98 @@
         }
     }
 }
+
 [data-page-name="soluectionSection"] {
-    &.soluectionSection{
-        
+    &.soluectionSection {
+        & .card {
+            background-color: #1b150d;
+            transition: all 0.6s ease-in-out;
+            & .card-body {
+                & .card-image {
+                    width: 60px;
+                    height: 60px;
+                    animation: rotate 4s linear infinite;
+                }
+                & .card-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;
+                }
+                & .groupbutton {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.6rem;
+                    & button {
+                        font-size: 14px;
+                        background-color: transparent;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background: $theme2;
+                            border-color: $theme2 !important;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                & .card-body {
+                    & .card-image {
+                        transition: all 0.6s ease-in-out;
+                        animation: unset;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Starting rotation angle */
+        }
+        to {
+            transform: rotate(360deg); /* Ending rotation angle (360 degrees for a full rotation) */
+        }
+    }
+}
+[data-page-name="servicesSection"] {
+    &.servicesSection {
+        & .card {
+            background-color: #1b150d;
+            .card-image {
+            }
+            .card-body {
+                .card-title {
+                    font-size: 18px;
+                }
+                & p {
+                    font-size: 13px;
+                }
+                & a {
+                    border-bottom: 3px solid $white;
+                    & span {
+                        width: 26px;
+                        height: 26px;
+                        animation: arrow 2s infinite;
+                        transform: rotate(360deg);
+                    }
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    @keyframes arrow {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0) rotate(360deg);
+        }
+
+        50% {
+            -webkit-transform: translateX(10px);
+            transform: translateX(10px) rotate(360deg);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0) rotate(360deg);
+        }
     }
 }
 
