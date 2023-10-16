@@ -60,6 +60,11 @@
         }
     }
 }
+[data-page-name="soluectionSection"] {
+    &.soluectionSection{
+        
+    }
+}
 
 // Small devices (landscape phones, 576px and up)
 @mixin heroSectiongame-mixin-min-sm() {
