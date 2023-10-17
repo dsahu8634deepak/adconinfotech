@@ -326,27 +326,190 @@
     }
 }
 .TechExpertiseSection {
-  background-color: lighten($theme1, $amount: 65);
+  // background-color: lighten($theme1, $amount: 55);
+  background: linear-gradient(to bottom, rgba($theme1, 0.2), rgba($theme2, 0.4));
  & .hero-carousel {
-  & .item {
-    & .card {
-      background-color: transparent;
-      opacity: 0.1;
-      transition: all 0.3s ease-in-out;
-      cursor: pointer;
-      & .card-img {
-      }
-      & .card-title {
-        color: $theme1;
-        font-weight: bold;
-        text-align: center;
-      }
-      &:hover {
-        opacity: 1;
+  & .owl-item {
+    & .item {
+      & .card {
+        background-color: transparent;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        & .card-img {
+          & img {
+            margin: auto;
+            width: 75px;
+            height: 57px;
+            object-fit: contain;
+          }
+        }
+        & .card-title {
+          color: $theme1;
+          font-weight: bold;
+          text-align: center;
+        }
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
  }
+}
+.industriesWeServe {
+  & .card,
+  & .card * {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  & .card {
+    position: relative;
+    color: $white;
+    overflow: hidden;
+    border: none;
+    border-radius: 0 !important;
+    & .card-img {
+      position: relative;
+      width: 100%;
+      height: 387px;
+      overflow: hidden;
+      & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        object-fit: cover;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        background: #000;
+        top: 0;
+        opacity: .9;
+      }
+    }
+    & .service-con {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 30px 20px 72px;
+      z-index: 10;
+      height: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding-top: 100px;
+      text-align: center;
+      & .top {
+        & .icon-web {
+          position: relative;
+          top: 0;
+          padding-bottom: 20px;
+          max-width: 65px;
+          margin: auto;
+          & img {
+            filter: invert(1);
+          }
+        }
+        & h3 {
+          color: $white;
+          font-size: 24px;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          position: relative;
+          &::after{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: $white;
+            border-radius: 5px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+          }
+        }
+      }
+      & .bottom {
+        position: relative;
+        bottom: 50px;
+        opacity: 0;
+        & p {
+          font-size: 14px;
+          line-height: 24px;
+          color: $white;
+          margin: 15px 0;
+        }
+      }
+    }
+    & .service-con-list {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 25px 10px;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background-color: rgba(255,255,255,.1);
+      & ul {
+        margin-bottom: 0;
+        & li {
+          padding: 0;
+          margin: 0 !important;
+          &:last-child{
+            margin-right: 0.5rem;
+            & a:last-child {
+              border-color: transparent;
+            }
+          }
+          & a {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: 'Rubik',sans-serif;
+            color: $white;
+            border-right: 1px solid $white;
+            padding: 0 10px;
+            text-decoration: none;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+    &:hover {
+        & .card-img::after {
+          background-color: rgba(12,101,159,.9);
+          -webkit-transition: all .4s ease-in-out;
+          -moz-transition: all .4s ease-in-out;
+          -o-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;}
+        & .service-con {
+          padding-top: 0;
+          & .bottom {
+            position: relative;
+            bottom: 0;
+            opacity: 1;
+        }
+        & .icon-web {
+          top: 100px;
+          margin-top: -35px;
+          opacity: 0;
+        }
+        & .service-con-list {
+          background-color: rgba(0,0,0,.8);
+        }
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
