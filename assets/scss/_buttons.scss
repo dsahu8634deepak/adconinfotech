@@ -15,25 +15,27 @@
 
 $btn-bg:$theme1;
 $btn-color:$theme2;
-$btn-width: 220px;
-$btn-height:35px;
+$btn-width: 180px;
+$btn-height:30px;
 .cr_btn{
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    max-width: $btn-width;
-    width: 100%;
+    min-width: $btn-width;
+    width: auto;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid $btn-color;
     color: $btn-color;
     line-height: $btn-height;
+    font-size: 14px;
     box-sizing: border-box;
     transition: 0.8s ease-in-out;
     padding: 4px 12px;
     z-index: 1;
+    white-space: nowrap;
     &:before,
     &::after {
         content: "";
@@ -68,6 +70,10 @@ $btn-height:35px;
         animation-direction: alternate;
       }
     }
+  & img {
+    width: 16px;
+    margin-right: 5px;
+  }
   &.cr_btn_outline{
     background-color: $btn-color;
     border-color: $btn-color;
@@ -115,7 +121,44 @@ $btn-height:35px;
     height: calc($btn-width * 1.5);
   }
 }
+// ---------------------------game button Site -------------------------------------
+.gameButton{
+  font-size: 14px;
+  font-weight: 600;
+  color: $white;
+  font-style: italic;
+  animation: arrow 2s infinite;
+  transform: rotate(360deg);
+  border-radius: 15px 2px 15px 2px;
+  transition: all 0.3s ease-in-out;
+  & span{
+    width: 26px;
+    height: 26px;
+    animation: arrow 2s infinite;
+    transform: rotate(360deg);
+  }
+  &:hover{
+    background-color: $theme2 !important;
+    border-color: $theme2 !important;
+  }
+}
 
+@keyframes arrow {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0) rotate(360deg);
+  }
+
+  50% {
+      -webkit-transform: translateX(10px);
+      transform: translateX(10px) rotate(360deg);
+  }
+
+  100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0) rotate(360deg);
+  }
+}
 // Small devices (landscape phones, 576px and up)
 @mixin mainbtn-mixin-min-sm() {}
 

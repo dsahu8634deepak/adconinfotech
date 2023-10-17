@@ -1,5 +1,42 @@
-
-
+.headingcontent {
+    & .backgroumdtext {
+        color: rgba(255, 255, 255, 0.05);
+        text-align: center;
+        font-size: calc(6vw + 65px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: calc(6vw + 65px);
+        text-transform: uppercase;
+        max-width: fit-content;
+        margin: auto;
+        font-style: italic;
+        letter-spacing: 10px;
+    }
+    & .headingimage {
+        font-size: 16px;
+        font-weight: 600;
+        color: $theme2;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        & span {
+            width: 50px;
+            height: 50px;
+        }
+        &.leftposition20{
+            left: 20%;
+        }
+    }
+    & .headingGame {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    & p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
 
 // Small devices (landscape phones, 576px and up)
 @mixin heading-mixin-min-sm() {
@@ -23,12 +60,10 @@
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin heading-mixin-max-xs() {
-
 }
 
 // Small devices (landscape phones, less than 768px)
 @mixin heading-mixin-max-sm() {
-
 }
 
 // Medium devices (tablets, less than 992px)

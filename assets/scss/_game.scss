@@ -17,17 +17,15 @@
         gap: 1rem;
 
         & .subHeadinggame {
-            font-family: "Square Peg";
             font-style: italic;
             font-size: 18px;
             font-weight: 400;
             color: $theme2;
         }
         & .gameHeading {
-            font-family: bb;
             font-size: 40px;
             -webkit-text-stroke-color: $theme1;
-            -webkit-text-fill-color: white;
+            -webkit-text-fill-color: $white;
             -webkit-text-stroke-width: 1px;
             text-shadow: 2px 2px 0 $theme1;
             letter-spacing: 1px;
@@ -35,7 +33,7 @@
         & .subtitlegame {
             font-size: 14px;
             font-weight: 400;
-            color: white;
+            color: $white;
             line-height: 22px;
         }
         & .buttongroup {
@@ -44,7 +42,7 @@
             & .buttongame {
                 font-size: 14px;
                 font-weight: 400;
-                color: white;
+                color: $white;
                 border: 1px solid;
                 border-color: $theme2;
                 transition: all 0.3s ease-in-out;
@@ -61,6 +59,239 @@
     }
 }
 
+[data-page-name="soluectionSection"] {
+    &.soluectionSection {
+        & .card {
+            background-color: #1b150d;
+            transition: all 0.6s ease-in-out;
+            & .card-body {
+                & .card-image {
+                    width: 60px;
+                    height: 60px;
+                    animation: rotate 4s linear infinite;
+                }
+                & .card-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;
+                }
+                & .groupbutton {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.6rem;
+                    & button {
+                        font-size: 14px;
+                        background-color: transparent;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background: $theme2;
+                            border-color: $theme2 !important;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                & .card-body {
+                    & .card-image {
+                        transition: all 0.6s ease-in-out;
+                        animation: unset;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Starting rotation angle */
+        }
+        to {
+            transform: rotate(360deg); /* Ending rotation angle (360 degrees for a full rotation) */
+        }
+    }
+}
+[data-page-name="servicesSection"] {
+    &.servicesSection {
+        & .card {
+            background-color: #1b150d;
+            .card-image {
+            }
+            .card-body {
+                .card-title {
+                    font-size: 18px;
+                }
+                & p {
+                    font-size: 13px;
+                }
+                & a {
+                    border-bottom: 1.4px solid $white;
+                    & span {
+                        width: 26px;
+                        height: 26px;
+                        animation: arrow 2s infinite;
+                        transform: rotate(360deg);
+                    }
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    @keyframes arrow {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0) rotate(360deg);
+        }
+
+        50% {
+            -webkit-transform: translateX(10px);
+            transform: translateX(10px) rotate(360deg);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0) rotate(360deg);
+        }
+    }
+}
+[data-page-name="discusgamingsection"] {
+    &.discusgamingsection {
+        background: linear-gradient(92deg, rgb(15 15 15 / 72%), rgb(30 31 32 / 13%)), url(../image/game/gaming_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        & .leftimagegaming {
+            height: 300px;
+        }
+        & .rightimagegaming {
+            height: 300px;
+        }
+        & h3 {
+            font-size: 50px;
+            & span {
+                color: $theme2;
+            }
+        }
+    }
+}
+[data-page-name="whychoseus"] {
+    &.whyChoseUs {
+        & .card {
+            background-color: #1b150d;
+            height: 100%;
+            & .card-title {
+                font-size: 40px;
+                font-weight: 600;
+                color: $theme2;
+                font-style: italic;
+                text-align: center;
+            }
+            & .subHeading {
+                font-size: 15px;
+                font-weight: 600;
+                text-align: center;
+                color: $white;
+            }
+            & .card-body {
+                & .card-body-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;
+                }
+                & .cardperograph {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+[data-page-name="blogsSection"] {
+    &.blogsSection {
+        & .card {
+            background-color: #0f0900;
+            transition: all 0.3 ease-in-out;
+            & .card-body {
+                & .card-title {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 26px;
+                }
+                & p {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                & a {
+                    border-bottom: 1.4px solid $white;
+                    & span {
+                        width: 26px;
+                        height: 26px;
+                        animation: arrow 2s infinite;
+                        transform: rotate(360deg);
+                    }
+                    font-size: 13px;
+                }
+            }
+            &:hover {
+                border-color: $theme2 !important;
+            }
+        }
+    }
+    @keyframes arrow {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0) rotate(360deg);
+        }
+
+        50% {
+            -webkit-transform: translateX(10px);
+            transform: translateX(10px) rotate(360deg);
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0) rotate(360deg);
+        }
+    }
+}
+[data-page-name="searchImageSection"] {
+    &.searchImageSection {
+        & .searchImage {
+            background: linear-gradient(92deg, rgb(15 15 15 / 35%), rgb(30 31 32 / 13%)),
+                url(../image/game/hero_Inner_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            & .mainHeading {
+                font-size: 30px;
+                font-weight: 600;
+                color: $white;
+                font-style: italic;
+            }
+            & .searchImageSectionimage {
+                height: 300px;
+            }
+        }
+    }
+}
+[data-page-name="faqSection"] {
+    &.faqSection {
+        & .accordion {
+            & .accordion-item {
+                background-color: #1b150d !important;
+
+                & .accordion-header {
+                    background-color: #1b150d !important;
+                    & .accordion-button {
+                        background-color: #1b150d !important;
+                        font-size: 14px;
+                    }
+                }
+                & .accordion-collapse{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
 // Small devices (landscape phones, 576px and up)
 @mixin heroSectiongame-mixin-min-sm() {
 }

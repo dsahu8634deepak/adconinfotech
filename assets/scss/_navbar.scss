@@ -37,27 +37,27 @@
                     letter-spacing: 0.8px;
                     transition: 0.7s;
                     font-size: 16px;
-                    &:before {
-                        background-image: linear-gradient(90deg, $theme2 0%, $theme1 100%);
-                        bottom: 3px;
-                        content: "";
-                        height: 2px;
-                        left: 0;
-                        position: absolute;
-                        width: 0;
-                        -webkit-transition: all 0.3s ease-out 0s;
-                        transition: all 0.3s ease-out 0s;
-                    }
+                    // &:before {
+                    //     background-image: linear-gradient(90deg, $theme2 0%, $theme1 100%);
+                    //     bottom: 3px;
+                    //     content: "";
+                    //     height: 2px;
+                    //     left: 0;
+                    //     position: absolute;
+                    //     width: 0;
+                    //     -webkit-transition: all 0.3s ease-out 0s;
+                    //     transition: all 0.3s ease-out 0s;
+                    // }
                     &:hover {
                         color: lighten($theme2, 10) !important;
-                        &:before {
-                            width: 100%;
-                        }
+                        // &:before {
+                        //     width: 100%;
+                        // }
                     }
                     &.active {
-                        &::before{
-                            width: 100%;
-                        }
+                        // &::before{
+                        //     width: 100%;
+                        // }
                         color: lighten($theme2, 10) !important;
                     }
                 }
