@@ -146,6 +146,9 @@
         font-size: 28px;
         font-weight: 600;
         color: $theme1;
+        & span {
+          color: $theme2;
+        }
     }
     .sectionText {
         font-size: 18px;
@@ -162,22 +165,23 @@
             overflow: hidden;
             padding: 4px;
             border-radius: 8px;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 500px;
-                height: 500px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: $theme2;
-                background: -moz-linear-gradient(90deg, $theme2 0%, $theme1 50%, $theme2 100%);
-                background: -webkit-linear-gradient(90deg, $theme2 0%, $theme1 50%, $theme2 100%);
-                background: linear-gradient(90deg, $theme2 0%, $theme1 50%, $theme2 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#049e9c",endColorstr="#049e9c",GradientType=1);
-                animation: devAnimation 5s linear infinite;
-                z-index: 0;
-            }
+            box-shadow: 0px 0px 8px 1px #eee;
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     width: 500px;
+            //     height: 500px;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //     background: $theme2;
+            //     background: -moz-linear-gradient(90deg, $theme2 0%, $theme1 50%, $theme2 100%);
+            //     background: -webkit-linear-gradient(90deg, $theme2 0%, $theme1 50%, $theme2 100%);
+            //     background: linear-gradient(90deg, $theme2 0%, $theme1 50%, $theme2 100%);
+            //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#049e9c",endColorstr="#049e9c",GradientType=1);
+            //     animation: devAnimation 5s linear infinite;
+            //     z-index: 0;
+            // }
             & .card-body {
                 padding: 15px;
                 position: relative;
@@ -190,7 +194,7 @@
                 transition: all 0.3s ease-in-out;
                 & .card-img {
                     width: auto;
-                    height: 50px;
+                    height: 40px;
                     transition: all 0.3s ease-in-out;
                     margin-bottom: 15px;
                     & img {
@@ -199,8 +203,8 @@
                     }
                 }
                 & .card-title {
-                    font-size: 20px;
-                    line-height: 25px;
+                    font-size: 18px;
+                    line-height: 24px;
                     color: $theme1;
                     transition: all 0.3s ease-in-out;
                 }
@@ -210,65 +214,139 @@
                     color: $secondary;
                     transition: all 0.3s ease-in-out;
                 }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 150%;
-                    height: 150%;
-                    margin-top: -15%;
-                    margin-left: -15%;
-                    // top: 50%;
-                    // left: 50%;
-                    // transform: translate(-50%, -50%);
-                    background: $theme2;
-                    background: -moz-linear-gradient(45deg, $theme2 0%, $theme1 25%, $theme2 50%, $theme1 75%, $theme2 100%);
-                    background: -webkit-linear-gradient(45deg, $theme2 0%, $theme1 25%, $theme2 50%, $theme1 75%, $theme2 100%);
-                    background: linear-gradient(45deg, $theme2 0%, $theme1 25%, $theme2 50%, $theme1 75%, $theme2 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#049e9c",endColorstr="#049e9c",GradientType=1);
-                    z-index: -1;
-                    visibility: hidden;
-                    transition: all 0.3s ease-in-out;
-                    // animation: devInnAnimation 5s linear reverse;
-                }
+                // &::before {
+                //     content: "";
+                //     position: absolute;
+                //     width: 150%;
+                //     height: 150%;
+                //     margin-top: -15%;
+                //     margin-left: -15%;
+                //     // top: 50%;
+                //     // left: 50%;
+                //     // transform: translate(-50%, -50%);
+                //     background: $theme2;
+                //     background: -moz-linear-gradient(45deg, $theme2 0%, $theme1 25%, $theme2 50%, $theme1 75%, $theme2 100%);
+                //     background: -webkit-linear-gradient(45deg, $theme2 0%, $theme1 25%, $theme2 50%, $theme1 75%, $theme2 100%);
+                //     background: linear-gradient(45deg, $theme2 0%, $theme1 25%, $theme2 50%, $theme1 75%, $theme2 100%);
+                //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#049e9c",endColorstr="#049e9c",GradientType=1);
+                //     z-index: -1;
+                //     visibility: hidden;
+                //     transition: all 0.3s ease-in-out;
+                //     // animation: devInnAnimation 5s linear reverse;
+                // }
             }
             &:hover {
-                & .card-body {
-                    &::before {
-                        // animation: devInnAnimation 1s linear ;
-                        // z-index: -1;
-                        visibility: visible;
-                        transition: all 0.3s ease-in-out;
-                        transform: translate(20px, -20px);
-                    }
-                    & .card-img {
-                        & img {
-                            filter: invert(1);
-                        }
-                    }
-                    & .card-title,
-                    & .card-text {
-                        color: $white;
-                    }
-                }
+              box-shadow: 0px 0px 8px 5px #eee;
+                // & .card-body {
+                //     &::before {
+                //         // animation: devInnAnimation 1s linear ;
+                //         // z-index: -1;
+                //         visibility: visible;
+                //         transition: all 0.3s ease-in-out;
+                //         transform: translate(20px, -20px);
+                //     }
+                //     & .card-img {
+                //         & img {
+                //             filter: invert(1);
+                //         }
+                //     }
+                //     & .card-title,
+                //     & .card-text {
+                //         color: $white;
+                //     }
+                // }
             }
         }
     }
+    @keyframes devAnimation {
+        0% {
+            transform: translate(-50%, -50%) rotate(0);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    @keyframes devInnAnimation {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        100% {
+            transform: translate(20px, -20px);
+        }
+    }
+    .webMobileDevelopment {
+      & .webMobileDevCardOuter {
+        & .webMobileDevCard {
+          border: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & .card-tittle {
+            font-size: 14px;
+            font-weight: bold;
+            color: $theme1;
+            text-align: center;
+            margin-bottom: 15px;
+            max-width: 150px;
+          }
+          & .cardFImg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+          }
+          & .cardSImg {
+            position: relative;
+            margin-bottom: -38px;
+            z-index: 1;
+          }
+          & .cardTImg{
+
+          }
+          & .cardText {
+            font-size: 14px;
+            color: $secondary;
+            text-align: center;
+          }
+          &:hover {
+            & .card-tittle {
+              color: $theme2;
+            }
+          }
+        }
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6){
+            margin-top: 45px;
+          
+        }
+        
+      }
+    }
 }
-@keyframes devAnimation {
-    0% {
-        transform: translate(-50%, -50%) rotate(0);
+.TechExpertiseSection {
+  background-color: lighten($theme1, $amount: 65);
+ & .hero-carousel {
+  & .item {
+    & .card {
+      background-color: transparent;
+      opacity: 0.1;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      & .card-img {
+      }
+      & .card-title {
+        color: $theme1;
+        font-weight: bold;
+        text-align: center;
+      }
+      &:hover {
+        opacity: 1;
+      }
     }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-@keyframes devInnAnimation {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    100% {
-        transform: translate(20px, -20px);
-    }
+  }
+ }
 }
 
 // Small devices (landscape phones, 576px and up)
