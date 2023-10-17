@@ -15,25 +15,27 @@
 
 $btn-bg:$theme1;
 $btn-color:$theme2;
-$btn-width: 220px;
-$btn-height:35px;
+$btn-width: 180px;
+$btn-height:30px;
 .cr_btn{
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    max-width: $btn-width;
-    width: 100%;
+    min-width: $btn-width;
+    width: auto;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid $btn-color;
     color: $btn-color;
     line-height: $btn-height;
+    font-size: 14px;
     box-sizing: border-box;
     transition: 0.8s ease-in-out;
     padding: 4px 12px;
     z-index: 1;
+    white-space: nowrap;
     &:before,
     &::after {
         content: "";
@@ -68,6 +70,10 @@ $btn-height:35px;
         animation-direction: alternate;
       }
     }
+  & img {
+    width: 16px;
+    margin-right: 5px;
+  }
   &.cr_btn_outline{
     background-color: $btn-color;
     border-color: $btn-color;
