@@ -121,19 +121,28 @@ $btn-height:30px;
     height: calc($btn-width * 1.5);
   }
 }
-
+// ---------------------------game button Site -------------------------------------
 .gameButton{
   font-size: 14px;
   font-weight: 600;
   color: $white;
   font-style: italic;
+  animation: arrow 2s infinite;
+  transform: rotate(360deg);
+  border-radius: 15px 2px 15px 2px;
+  transition: all 0.3s ease-in-out;
   & span{
     width: 26px;
     height: 26px;
     animation: arrow 2s infinite;
     transform: rotate(360deg);
   }
+  &:hover{
+    background-color: $theme2 !important;
+    border-color: $theme2 !important;
+  }
 }
+
 @keyframes arrow {
   0% {
       -webkit-transform: translateX(0);
