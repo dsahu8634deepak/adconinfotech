@@ -66,8 +66,28 @@ owl.owlCarousel({
     }
 });
 //*******************************************owl Carousel End*******************************
-
-
+// ******************************************Owl Carousel Games Start***********************
+$('.gameslider').owlCarousel({
+    items:10,
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:false,
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 
 
 
