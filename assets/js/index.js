@@ -72,9 +72,9 @@ $('.gameslider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    autoplay:false,
+    autoplay:true,
     autoplayTimeout:5000,
-    autoplayHoverPause:false,
+    autoplayHoverPause:true,
     nav:false,
     responsive:{
         0:{

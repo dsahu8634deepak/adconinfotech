@@ -6,7 +6,7 @@
         & .headerTop {
             & a {
                 color: $theme2;
-                font-size: 16px;
+                font-size: 14px;
                 transition: all 0.3s ease-in-out;
                 & span {
                     & img {
@@ -36,7 +36,7 @@
                     text-decoration: none;
                     letter-spacing: 0.8px;
                     transition: 0.7s;
-                    font-size: 16px;
+                    font-size: 14px;
                     padding: 0;
                     &:hover {
                         color: lighten($theme2, 10) !important;
