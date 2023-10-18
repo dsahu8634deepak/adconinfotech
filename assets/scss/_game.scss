@@ -277,6 +277,7 @@
         & .accordion {
             & .accordion-item {
                 background-color: #1b150d !important;
+                overflow: hidden;
 
                 & .accordion-header {
                     background-color: #1b150d !important;
@@ -284,12 +285,77 @@
                     & .accordion-button {
                         background-color: #1b150d !important;
                         font-size: 14px;
-                        border-radius: 30px;
+                        border-radius: 16px 16px 0px 0px !important;
                     }
                 }
-                & .accordion-collapse{
-                    color: $white;
+            }
+            & .accordion-collapse {
+                color: $white;
+            }
+            & .accordion-button {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+                color: $white;
+                font-size: 14px;
+                text-align: left;
+                background-color: $theme2;
+                border: 0;
+                border-radius: 11px 11px 0px 0px !important;
+                overflow-anchor: none;
+                -webkit-transition:
+                    color 0.15s ease-in-out,
+                    background-color 0.15s ease-in-out,
+                    border-color 0.15s ease-in-out,
+                    border-radius 0.15s ease,
+                    -webkit-box-shadow 0.15s ease-in-out;
+                transition:
+                    color 0.15s ease-in-out,
+                    background-color 0.15s ease-in-out,
+                    border-color 0.15s ease-in-out,
+                    border-radius 0.15s ease,
+                    -webkit-box-shadow 0.15s ease-in-out;
+                transition:
+                    color 0.15s ease-in-out,
+                    background-color 0.15s ease-in-out,
+                    border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out,
+                    border-radius 0.15s ease;
+                transition:
+                    color 0.15s ease-in-out,
+                    background-color 0.15s ease-in-out,
+                    border-color 0.15s ease-in-out,
+                    box-shadow 0.15s ease-in-out,
+                    border-radius 0.15s ease,
+                    -webkit-box-shadow 0.15s ease-in-out;
+
+                &::after {
+                    content: "+";
+                    background-image: none;
+                    padding-left: 10px;
+                    font-size: 17px;
+                    font-weight: 600;
                 }
+
+                &:not(.collapsed)::after {
+                    content: "-";
+                    background-image: none;
+                }
+
+                &:focus {
+                    z-index: 3;
+                    border-color: $theme1 !important;
+                    outline: 0 !important;
+                    box-shadow: none !important;
+                }
+            }
+            & .accordion-button:not(.collapsed) {
+                color: $white;
+                background-image: linear-gradient(110deg, $theme2 0%, $theme1 100%);
+                box-shadow: none !important;
             }
         }
     }
