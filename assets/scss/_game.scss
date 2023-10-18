@@ -431,6 +431,26 @@
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin heroSectiongame-mixin-max-xs() {
+    [data-page-name="heroSectiongame"] {
+        &.heroSectiongame {
+        }
+        .herocontent {
+            & .subHeadinggame {
+            }
+            & .gameHeading {
+            }
+            & .subtitlegame {
+            }
+            & .buttongroup {
+                & .buttongame {
+                    & span {
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -448,3 +468,56 @@
 // X-Large devices (large desktops, less than 1400px)
 @mixin heroSectiongame-mixin-max-xl() {
 }
+// ***************************************************Soluection Section *****************************
+[data-page-name="soluectionSection"] {
+    &.soluectionSection {
+        & .card {
+            background-color: #1b150d;
+            transition: all 0.6s ease-in-out;
+            & .card-body {
+                & .card-image {
+                    width: 60px;
+                    height: 60px;
+                    animation: rotate 4s linear infinite;
+                }
+                & .card-title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $white;
+                }
+                & .groupbutton {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.6rem;
+                    & button {
+                        font-size: 14px;
+                        background-color: transparent;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            background: $theme2;
+                            border-color: $theme2 !important;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                & .card-body {
+                    & .card-image {
+                        transition: all 0.6s ease-in-out;
+                        animation: unset;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Starting rotation angle */
+        }
+        to {
+            transform: rotate(360deg); /* Ending rotation angle (360 degrees for a full rotation) */
+        }
+    }
+}
+// ***************************************************Service Section *****************************
+// ***************************************************Dis Section *****************************
