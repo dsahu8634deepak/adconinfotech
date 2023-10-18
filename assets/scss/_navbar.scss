@@ -2,11 +2,11 @@
     z-index: 15;
     transition: all .3s ease-in-out;
     & .navbar {
-        // background-image: unset;
         transition: all .3s ease-in-out;
         & .headerTop {
             & a {
                 color: $theme2;
+                font-size: 16px;
                 transition: all 0.3s ease-in-out;
                 & span {
                     & img {
@@ -37,27 +37,11 @@
                     letter-spacing: 0.8px;
                     transition: 0.7s;
                     font-size: 16px;
-                    // &:before {
-                    //     background-image: linear-gradient(90deg, $theme2 0%, $theme1 100%);
-                    //     bottom: 3px;
-                    //     content: "";
-                    //     height: 2px;
-                    //     left: 0;
-                    //     position: absolute;
-                    //     width: 0;
-                    //     -webkit-transition: all 0.3s ease-out 0s;
-                    //     transition: all 0.3s ease-out 0s;
-                    // }
+                    padding: 0;
                     &:hover {
                         color: lighten($theme2, 10) !important;
-                        // &:before {
-                        //     width: 100%;
-                        // }
                     }
                     &.active {
-                        // &::before{
-                        //     width: 100%;
-                        // }
                         color: lighten($theme2, 10) !important;
                     }
                 }
@@ -85,12 +69,6 @@
         }
     }
     & .navbar-brand {
-        // &.color_logo {
-        //     display: none !important;
-        // }
-        &.white_logo {
-            display: block !important;
-        }
         & img {
             filter: brightness(1000) sepia(100);
         }
@@ -111,45 +89,29 @@
     }
 }
 
-.always-nav-active {
-    transition: all .5s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247) !important;
-    background-image: linear-gradient(90deg, $theme1 0%, $theme2 100%) !important;
-    & .navbar-brand {
-        // &.color_logo {
-        //     display: none !important;
-        // }
-        &.white_logo {
-            display: block !important;
-        }
-    }
-    & .nav-link {
-        color: $white !important;
-        &::before {
-            background-image: linear-gradient(90deg, $black 0%, $white 100%) !important;
-        }
-    }
-    & .toogle_btn {
-        & i {
-            color: $white !important;
-        }
-    }
-}
 
 .offcanvas {
     width: 300px;
     & .offcanvas-header {
+        padding: 8px 16px;
         box-shadow: 0px 0px 10px rgb($black, 0.15);
+        & .offcanvas-title {
+            height: 40px;
+        }
     }
     & .offcanvas-body {
+        padding: 0;
         & .navbar-nav {
             & .nav-item {
                 & .nav-link {
-                    color: #343434;
+                    color: $theme1;
                     transition: all 0.3s;
                     font-size: 14px;
                     &:hover {
                         color: $theme1 !important;
+                    }
+                    &.active {
+                        color: $theme2;
                     }
                 }
                 & .dropdown-menu {
@@ -167,4 +129,232 @@
             }
         }
     }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin navbar-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin navbar-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin navbar-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin navbar-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin navbar-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin navbar-mixin-max-xs() {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin navbar-mixin-max-sm() {
+    .header {
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 15%) !important;
+        background: linear-gradient(180deg, $theme2, $theme1);
+        & .navbar {
+            & .headerTop {
+                & a {
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+            & .navbar-brand {
+                // height: 35px;
+                & img {
+                    filter: brightness(1000) sepia(100);
+                }
+            }
+            & .navbar-nav {
+                & .nav-item {
+                    .nav-link {
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .header.active {
+        & .headerTop {
+            & a {
+                & span {
+                    & img {
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+        & .navbar-brand {
+            &.white_logo {
+            }
+            & img {
+            }
+        }
+        & .nav-link {
+            &::before {
+            }
+        }
+        & .toogle_btn {
+            & i {
+            }
+        }
+        & .cr_btn {
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin navbar-mixin-max-md() {
+    .header {
+        & .navbar {
+            & .headerTop {
+                & a {
+                    font-size: 15px;
+                    & span {
+                        & img {
+                        }
+                    }
+                    &:hover {
+                        & span {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+            & .navbar-brand {
+                height: 40px;
+            }
+            & .navbar-nav {
+                & .nav-item {
+                    .nav-link {
+                        font-size: 15px;
+                        &:hover {
+                        }
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .header.active {
+        & .headerTop {
+            & a {
+                & span {
+                    & img {
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+        & .navbar-brand {
+            &.white_logo {
+            }
+            & img {
+            }
+        }
+        & .nav-link {
+            &::before {
+            }
+        }
+        & .toogle_btn {
+            & i {
+            }
+        }
+        & .cr_btn {
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin navbar-mixin-max-lg() {
+.header {
+    & .navbar {
+        & .headerTop {
+            & a {
+                & span {
+                    & img {
+                    }
+                }
+                &:hover {
+                    & span {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+        & .navbar-brand {
+            height: 50px;
+        }
+        & .navbar-nav {
+            & .nav-item {
+                .nav-link {
+                    &:hover {
+                    }
+                    &.active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header.active {
+    & .headerTop {
+        & a {
+            & span {
+                & img {
+                }
+            }
+            &:hover {
+            }
+        }
+    }
+    & .navbar-brand {
+        &.white_logo {
+        }
+        & img {
+        }
+    }
+    & .nav-link {
+        &::before {
+        }
+    }
+    & .toogle_btn {
+        & i {
+        }
+    }
+    & .cr_btn {
+    }
+}
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin navbar-mixin-max-xl() {
 }
