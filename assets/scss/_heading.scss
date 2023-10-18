@@ -1,5 +1,19 @@
 
 
+.sectionHeading {
+    font-size: 28px;
+    font-weight: 600;
+    color: $theme1;
+    & span {
+      color: $theme2;
+    }
+}
+.sectionText {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: rgba($black, 0.6);
+}
 
 // Small devices (landscape phones, 576px and up)
 @mixin heading-mixin-min-sm() {
@@ -37,6 +51,15 @@
 
 // Large devices (desktops, less than 1200px)
 @mixin heading-mixin-max-lg() {
+    .sectionHeading {
+        font-size: 26px;
+        & span {
+        }
+    }
+    .sectionText {
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
 
 // X-Large devices (large desktops, less than 1400px)
