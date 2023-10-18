@@ -1,28 +1,28 @@
 
 <header class="header NavbarMain position-fixed top-0 w-100" >
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent flex-column ">
-        <div class="container-fluid headerTop">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent flex-column ">
+        <div class="container-fluid headerTop d-none d-md-flex">
             <div class="row w-100 mx-auto">
                 <div class="col-auto ms-auto px-0">
-                    <div class="row align-items-center gap-4 gx-0">
+                    <div class="row align-items-center gap-lg-4 gap-lg-3 gap-2 gap-xxl-5 gx-0">
                         <div class="col-auto">
-                            <a href="tel: +91-9549581582"><span><img src="./assets/image/index/call.svg" alt="Call"></span> +91-9549581582</a>
+                            <a href="tel: +91-9549581582"><span><img src="./assets/image/index/call.svg" alt="Call"></span>+91-9549581582</a>
                         </div>
                         <div class="col-auto">
-                            <a href="skype:live:Adconinfotech"><span><img src="./assets/image/index/skype.svg" alt="Skype"></span> live:Adconinfotech</a>
+                            <a href="skype:live:Adconinfotech"><span><img src="./assets/image/index/skype.svg" alt="Skype"></span>live:Adconinfotech</a>
                         </div>
                         <div class="col-auto">
-                            <a href="mailto:info@adconinfotech.com"><span><img src="./assets/image/index/email.svg" alt="Emial"></span> info@adconinfotech.com</a>
+                            <a href="mailto:info@adconinfotech.com"><span><img src="./assets/image/index/email.svg" alt="Emial"></span>info@adconinfotech.com</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid align-items-end">
-            <a class="navbar-brand color_logo m-0 py-0 " href="../index.html"  class="h-100"><img src="./assets/image/logos/logo.png" class="h-100" alt="Logo"></a>
-            <button class="btn toogle_btn border-0 shadow-none fs-sm-25 fs-22 d-lg-none d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="imgs img-bars text-dark"></i></button>
+            <a class="navbar-brand color_logo m-0 py-0 " href="./index.html"  class="h-100"><img src="./assets/image/logos/logo.png" class="h-100" alt="Logo"></a>
+            <button class="btn toogle_btn border-0 shadow-none d-md-none d-flex" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./assets/image/index/menuLightBtn.svg" alt=""></button>
             <div class="collapse navbar-collapse gap-4" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto gap-4 ">
+                <ul class="navbar-nav ms-auto gap-lg-4 gap-lg-3 gap-2 gap-xxl-5 ">
                     <li class="nav-item"><a class="nav-link position-relative fw-bold text-theme2 active" href="javascript:;">Home</a></li>
                     <li class="nav-item"><a class="nav-link position-relative fw-bold text-theme2" href="javascript:;">Our Work</a></li>
                     <li class="nav-item"><a class="nav-link position-relative fw-bold text-theme2" href="javascript:;">Service</a></li>
@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link position-relative fw-bold text-theme2" href="javascript:;">Games</a></li>
                     <li class="nav-item"><a class="nav-link position-relative fw-bold text-theme2" href="javascript:;">Solutions</a></li>
                 </ul>
-                <a href="javascript:;" class="cr_btn"><img src="./assets/image/game/Quote.gif" alt=""><span>Request Quote</span></a>
+                <a href="javascript:;" class="cr_btn d-none d-lg-inline-flex"><img src="./assets/image/game/Quote.gif" alt=""><span>Request Quote</span></a>
             </div>
         </div>
     </nav>
@@ -41,16 +41,20 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header align-items-center">
-        <h5 class="offcanvas-title h-50px" id="offcanvasRightLabel"><a href="javascript:;" class=""><img src="./assets/image/logos/logo.png" alt="Logo" class="h-100"></a></h5>
-        <button type="button" class="border-0 btn shadow-none fs-20" data-bs-dismiss="offcanvas" aria-label="Close"><i class="imgl img-times"></i></button>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"><a href="javascript:;" class=""><img src="./assets/image/logos/logo.png" alt="Logo" class="h-100"></a></h5>
+        <button type="button" class="border-0 btn shadow-none fs-20" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/image/index/crossLightBtn.svg" alt=""></button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body d-flex flex-column pb-2">
         <ul class="navbar-nav ms-aut">
-            <li class="nav-item"><a class="nav-link fs-sm-16 fs-14 text-center border-bottom py-3 fw-bold" href="javascript:;">Home</a></li>
-            <li class="nav-item"><a class="nav-link fs-sm-16 fs-14 text-center border-bottom py-3 fw-bold" href="javascript:;">Our Work</a></li>
-            <li class="nav-item"><a class="nav-link fs-sm-16 fs-14 text-center border-bottom py-3 fw-bold" href="javascript:;">Service</a></li>
-            <li class="nav-item"><a class="nav-link fs-sm-16 fs-14 text-center border-bottom py-3 fw-bold" href="javascript:;">Solutions</a></li>
+            <li class="nav-item"><a class="nav-link text-center border-bottom py-3 fw-bold active" href="javascript:;">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-center border-bottom py-3 fw-bold" href="javascript:;">Our Work</a></li>
+            <li class="nav-item"><a class="nav-link text-center border-bottom py-3 fw-bold" href="javascript:;">Service</a></li>
+            <li class="nav-item"><a class="nav-link text-center border-bottom py-3 fw-bold" href="javascript:;">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link text-center border-bottom py-3 fw-bold" href="javascript:;">Games</a></li>
+            <li class="nav-item"><a class="nav-link text-center border-bottom py-3 fw-bold" href="javascript:;">Solutions</a></li>
 
         </ul>
+        
+        <a href="javascript:;" class="cr_btn cr_btn_outline mx-auto mt-auto"><img src="./assets/image/game/Quote.gif" alt=""><span>Request Quote</span></a>
     </div>
 </div>
