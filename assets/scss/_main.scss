@@ -132,3 +132,20 @@
   }
 }
 
+.card-footer.groupbutton {
+  &::-webkit-scrollbar {
+    height: 0px !important;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+  }
+}
