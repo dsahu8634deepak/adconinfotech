@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import "variables";
-//------------------------------------------heroSectiongame-------------------------------------------------------
+//*****************************************Hero Section Game*****************************************************
 [data-page-name="heroSectiongame"] {
     &.heroSectiongame {
         background: linear-gradient(92deg, rgb(15 15 15 / 72%), rgb(30 31 32 / 13%)), url(../image/game/heroimage.jpg);
@@ -59,6 +59,66 @@
     }
 }
 
+// Small devices (landscape phones, 576px and up)
+@mixin heroSectiongame-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin heroSectiongame-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin heroSectiongame-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin heroSectiongame-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin heroSectiongame-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin heroSectiongame-mixin-max-xs() {
+    [data-page-name="heroSectiongame"] {
+        &.heroSectiongame {
+        }
+        .herocontent {
+            & .subHeadinggame {
+            }
+            & .gameHeading {
+            }
+            & .subtitlegame {
+            }
+            & .buttongroup {
+                & .buttongame {
+                    & span {
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin heroSectiongame-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin heroSectiongame-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin heroSectiongame-mixin-max-lg() {
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin heroSectiongame-mixin-max-xl() {
+}
+// ***************************************************Soluection Section *******************************
 [data-page-name="soluectionSection"] {
     &.soluectionSection {
         & .card {
@@ -79,6 +139,8 @@
                     display: flex;
                     align-items: center;
                     gap: 0.6rem;
+                    white-space: nowrap;
+                    overflow: auto hidden;
                     & button {
                         font-size: 14px;
                         background-color: transparent;
@@ -109,6 +171,68 @@
         }
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@mixin soluectionSection-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin soluectionSection-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin soluectionSection-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin soluectionSection-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin soluectionSection-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin soluectionSection-mixin-max-xs() {
+    [data-page-name="soluectionSection"] {
+        &.soluectionSection {
+            & .card {
+                & .card-body {
+                    & .card-image {
+                    }
+                    & .card-title {
+                    }
+                    & .groupbutton {
+                        & button {
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    & .card-body {
+                        & .card-image {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin soluectionSection-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin soluectionSection-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin soluectionSection-mixin-max-lg() {
+}
+
+// ***************************************************Service Section **********************************
 [data-page-name="servicesSection"] {
     &.servicesSection {
         & .card {
@@ -152,6 +276,61 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin servicesSection-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin servicesSection-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin servicesSection-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin servicesSection-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin servicesSection-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin servicesSection-mixin-max-xs() {
+}
+[data-page-name="servicesSection"] {
+    &.servicesSection {
+        & .card {
+            .card-image {
+            }
+            .card-body {
+                .card-title {
+                }
+                & p {
+                }
+                & a {
+                    & span {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin servicesSection-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin servicesSection-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin servicesSection-mixin-max-lg() {
+}
+
+// ***************************************************Discus Gaming Section ****************************
 [data-page-name="discusgamingsection"] {
     &.discusgamingsection {
         background: linear-gradient(92deg, rgb(15 15 15 / 72%), rgb(30 31 32 / 13%)), url(../image/game/gaming_bg.png);
@@ -172,6 +351,55 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin discusgamingsection-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin discusgamingsection-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin discusgamingsection-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin discusgamingsection-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin discusgamingsection-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin discusgamingsection-mixin-max-xs() {
+    [data-page-name="discusgamingsection"] {
+        &.discusgamingsection {
+            & .leftimagegaming {
+            }
+            & .rightimagegaming {
+            }
+            & h3 {
+                & span {
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin discusgamingsection-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin discusgamingsection-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin discusgamingsection-mixin-max-lg() {
+}
+
+// ***************************************************Why Choseus Section ******************************
 [data-page-name="whychoseus"] {
     &.whyChoseUs {
         & .card {
@@ -204,6 +432,59 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin whychoseus-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin whychoseus-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin whychoseus-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin whychoseus-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin whychoseus-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin whychoseus-mixin-max-xs() {
+    [data-page-name="whychoseus"] {
+        &.whyChoseUs {
+            & .card {
+                & .card-title {
+                }
+                & .subHeading {
+                }
+                & .card-body {
+                    & .card-body-title {
+                    }
+                    & .cardperograph {
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin whychoseus-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin whychoseus-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin whychoseus-mixin-max-lg() {
+}
+
+// ***************************************************Blogs Section ************************************
 [data-page-name="blogsSection"] {
     &.blogsSection {
         & .card {
@@ -252,56 +533,122 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin blogsSection-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin blogsSection-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin blogsSection-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin blogsSection-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin blogsSection-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin blogsSection-mixin-max-xs() {
+    [data-page-name="blogsSection"] {
+        &.blogsSection {
+            & .card {
+                & .card-body {
+                    & .card-title {
+                    }
+                    & p {
+                    }
+                    & a {
+                        & span {
+                        }
+                    }
+                }
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin blogsSection-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin blogsSection-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin blogsSection-mixin-max-lg() {
+}
+
+// **************************************************Testimonial Section ********************************
 [data-page-name="testimonialSection"] {
     &.testimonialSection {
         & .gameslider {
-            & .item {
+            height: 100%;
+            & .owl-stage-outer {
                 height: 100%;
-                & .card {
-                    background: rgb(15 8 0);
+                & .owl-stage {
                     height: 100%;
-                    & .card-body {
-                        & .userImage {
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            overflow: hidden;
-                            border: 0.6px dotted $theme2;
-                        }
-                        & .starList {
-                            & li {
-                                width: 15px;
-                                height: 15px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                & img {
+                    & .owl-item {
+                        height: 100%;
+                        & .item {
+                            height: 100%;
+                            & .card {
+                                background: rgb(15 8 0);
+                                height: 100%;
+                                & .card-body {
+                                    & .userImage {
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                        overflow: hidden;
+                                        border: 0.6px dotted $theme2;
+                                    }
+                                    & .starList {
+                                        & li {
+                                            width: 15px;
+                                            height: 15px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            & img {
+                                            }
+                                        }
+                                    }
+                                    & .nameowner {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: $white;
+                                    }
+                                    & .profectionuser {
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: $theme2;
+                                    }
+                                    & .detailesuser {
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        color: $white;
+                                    }
                                 }
                             }
-                        }
-                        & .nameowner {
-                            font-size: 16px;
-                            font-weight: 600;
-                            color: $white;
-                        }
-                        & .profectionuser {
-                            font-size: 14px;
-                            font-weight: 600;
-                            color: $theme2;
-                        }
-                        & .detailesuser {
-                            font-size: 13px;
-                            font-weight: 600;
-                            color: $white;
                         }
                     }
                 }
             }
+
             & .owl-dots {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 10px;
+                margin-top: 15px;
                 gap: 0.4rem;
                 & .owl-dot {
                     width: 15px;
@@ -320,6 +667,82 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin testimonialSection-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin testimonialSection-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin testimonialSection-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin testimonialSection-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin testimonialSection-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin testimonialSection-mixin-max-xs() {
+    [data-page-name="testimonialSection"] {
+        &.testimonialSection {
+            & .gameslider {
+                & .owl-stage-outer {
+                    & .owl-stage {
+                        & .owl-item {
+                            & .item {
+                                & .card {
+                                    & .card-body {
+                                        & .userImage {
+                                        }
+                                        & .starList {
+                                            & li {
+                                                & img {
+                                                }
+                                            }
+                                        }
+                                        & .nameowner {
+                                        }
+                                        & .profectionuser {
+                                        }
+                                        & .detailesuser {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .owl-dots {
+                    & .owl-dot {
+                        &.active {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin testimonialSection-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin testimonialSection-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin testimonialSection-mixin-max-lg() {
+}
+
+// **************************************************Search Image Section *******************************
 [data-page-name="searchImageSection"] {
     &.searchImageSection {
         & .searchImage {
@@ -340,6 +763,53 @@
         }
     }
 }
+// Small devices (landscape phones, 576px and up)
+@mixin searchImageSection-mixin-min-sm() {
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin searchImageSection-mixin-min-md() {
+}
+
+// Large devices (desktops, 992px and up)
+@mixin searchImageSection-mixin-min-lg() {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin searchImageSection-mixin-min-xl() {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin searchImageSection-mixin-min-xxl() {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin searchImageSection-mixin-max-xs() {
+}
+[data-page-name="searchImageSection"] {
+    &.searchImageSection {
+        & .searchImage {
+            & .mainHeading {
+            }
+            & .searchImageSectionimage {
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin searchImageSection-mixin-max-sm() {
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin searchImageSection-mixin-max-md() {
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin searchImageSection-mixin-max-lg() {
+}
+
+// ************************************************** Faq Section ****************************************
 [data-page-name="faqSection"] {
     &.faqSection {
         & .accordion {
@@ -410,42 +880,49 @@
     }
 }
 // Small devices (landscape phones, 576px and up)
-@mixin heroSectiongame-mixin-min-sm() {
+@mixin faqSection-mixin-min-sm() {
 }
 
 // Medium devices (tablets, 768px and up)
-@mixin heroSectiongame-mixin-min-md() {
+@mixin faqSection-mixin-min-md() {
 }
 
 // Large devices (desktops, 992px and up)
-@mixin heroSectiongame-mixin-min-lg() {
+@mixin faqSection-mixin-min-lg() {
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@mixin heroSectiongame-mixin-min-xl() {
+@mixin faqSection-mixin-min-xl() {
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@mixin heroSectiongame-mixin-min-xxl() {
+@mixin faqSection-mixin-min-xxl() {
 }
 
 // X-Small devices (portrait phones, less than 576px)
-@mixin heroSectiongame-mixin-max-xs() {
-    [data-page-name="heroSectiongame"] {
-        &.heroSectiongame {
-        }
-        .herocontent {
-            & .subHeadinggame {
-            }
-            & .gameHeading {
-            }
-            & .subtitlegame {
-            }
-            & .buttongroup {
-                & .buttongame {
-                    & span {
+@mixin faqSection-mixin-max-xs() {
+    [data-page-name="faqSection"] {
+        &.faqSection {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            &::after {
+                            }
+                        }
                     }
-                    &:hover {
+                    & .accordion-collapse {
+                    }
+                    & .accordion-button {
+                        &:not(.collapsed)::after {
+                        }
+
+                        &:focus {
+                        }
+                    }
+                    & .accordion-button:not(.collapsed) {
+                    }
+                    & .accordion-body {
                     }
                 }
             }
@@ -454,70 +931,13 @@
 }
 
 // Small devices (landscape phones, less than 768px)
-@mixin heroSectiongame-mixin-max-sm() {
+@mixin faqSection-mixin-max-sm() {
 }
 
 // Medium devices (tablets, less than 992px)
-@mixin heroSectiongame-mixin-max-md() {
+@mixin faqSection-mixin-max-md() {
 }
 
 // Large devices (desktops, less than 1200px)
-@mixin heroSectiongame-mixin-max-lg() {
+@mixin faqSection-mixin-max-lg() {
 }
-
-// X-Large devices (large desktops, less than 1400px)
-@mixin heroSectiongame-mixin-max-xl() {
-}
-// ***************************************************Soluection Section *****************************
-[data-page-name="soluectionSection"] {
-    &.soluectionSection {
-        & .card {
-            background-color: #1b150d;
-            transition: all 0.6s ease-in-out;
-            & .card-body {
-                & .card-image {
-                    width: 60px;
-                    height: 60px;
-                    animation: rotate 4s linear infinite;
-                }
-                & .card-title {
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: $white;
-                }
-                & .groupbutton {
-                    display: flex;
-                    align-items: center;
-                    gap: 0.6rem;
-                    & button {
-                        font-size: 14px;
-                        background-color: transparent;
-                        transition: all 0.3s ease-in-out;
-                        &:hover {
-                            background: $theme2;
-                            border-color: $theme2 !important;
-                        }
-                    }
-                }
-            }
-            &:hover {
-                & .card-body {
-                    & .card-image {
-                        transition: all 0.6s ease-in-out;
-                        animation: unset;
-                    }
-                }
-            }
-        }
-    }
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg); /* Starting rotation angle */
-        }
-        to {
-            transform: rotate(360deg); /* Ending rotation angle (360 degrees for a full rotation) */
-        }
-    }
-}
-// ***************************************************Service Section *****************************
-// ***************************************************Dis Section *****************************
