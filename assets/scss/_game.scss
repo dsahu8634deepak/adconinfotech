@@ -280,9 +280,11 @@
 
                 & .accordion-header {
                     background-color: #1b150d !important;
+                    border-radius: 90px;
                     & .accordion-button {
                         background-color: #1b150d !important;
                         font-size: 14px;
+                        border-radius: 30px;
                     }
                 }
                 & .accordion-collapse{
