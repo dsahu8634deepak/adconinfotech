@@ -1,19 +1,23 @@
 .footer_section {
-    background:  linear-gradient(to right, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../image/index/footerBg.jpg);
-    background-repeat: repeat;
-    &::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: rgb(7 20 74 / 7%);
-    }
+    background-color: lighten($black, 5);
+    // background:  linear-gradient(to right, rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../image/index/footerBg.jpg);
+    // background-repeat: repeat;
+    // &::before{
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 4px;
+    //     background: rgb(7 20 74 / 7%);
+    // }
     & .inner_section {
         & .footer_box {
             & .footerLogo {
-                height: 40px;
+                height: 50px;
+                & img {
+                    filter: brightness(1000) sepia(100);
+                }
             }
             & .footerText {
                 font-size: 14px;
