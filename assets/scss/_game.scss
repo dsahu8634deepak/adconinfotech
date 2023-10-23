@@ -206,6 +206,7 @@
 @mixin soluectionSection-mixin-max-xs() {
     [data-page-name="soluectionSection"] {
         &.soluectionSection {
+            
             & .card {
                 & .card-body {
                     & .card-image {
@@ -249,7 +250,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin soluectionSection-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin soluectionSection-mixin-max-xl() {
+}
 // ***************************************************Service Section **********************************
 [data-page-name="servicesSection"] {
     &.servicesSection {
@@ -316,33 +319,33 @@
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin servicesSection-mixin-max-xs() {
-}
-[data-page-name="servicesSection"] {
-    &.servicesSection {
-        & .card {
-            .card-image {
-            }
-            .card-body {
-                padding: 0.8rem !important;
-                .card-title {
-                    text-align: center;
-                    font-size:15px;
+    [data-page-name="servicesSection"] {
+        &.servicesSection {
+            display: none;
+            & .card {
+                .card-image {
                 }
-                & p {
-                    font-size: 13px;
-                    text-align: justify;
-                }
-                & a {
-                    font-size: 12px;
-                    & span {
-                        width: 21px;
+                .card-body {
+                    padding: 0.8rem !important;
+                    .card-title {
+                        text-align: center;
+                        font-size:15px;
+                    }
+                    & p {
+                        font-size: 13px;
+                        text-align: justify;
+                    }
+                    & a {
+                        font-size: 12px;
+                        & span {
+                            width: 21px;
+                        }
                     }
                 }
             }
         }
     }
 }
-
 // Small devices (landscape phones, less than 768px)
 @mixin servicesSection-mixin-max-sm() {
 }
@@ -354,7 +357,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin servicesSection-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin servicesSection-mixin-max-xl() {
+}
 // ***************************************************Discus Gaming Section ****************************
 [data-page-name="discusgamingsection"] {
     &.discusgamingsection {
@@ -431,7 +436,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin discusgamingsection-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin discusgamingsection-mixin-max-xl() {
+}
 // ***************************************************Why Choseus Section ******************************
 [data-page-name="whychoseus"] {
     &.whyChoseUs {
@@ -516,7 +523,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin whychoseus-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin whychoseus-mixin-max-xl() {
+}
 // ***************************************************Blogs Section ************************************
 [data-page-name="blogsSection"] {
     &.blogsSection {
@@ -619,7 +628,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin blogsSection-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin blogsSection-mixin-max-xl() {
+}
 // **************************************************Testimonial Section ********************************
 [data-page-name="testimonialSection"] {
     &.testimonialSection {
@@ -774,7 +785,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin testimonialSection-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin testimonialSection-mixin-max-xl() {
+}
 // **************************************************Search Image Section *******************************
 [data-page-name="searchImageSection"] {
     &.searchImageSection {
@@ -841,7 +854,9 @@
 // Large devices (desktops, less than 1200px)
 @mixin searchImageSection-mixin-max-lg() {
 }
-
+// X-Large devices (large desktops, less than 1400px)
+@mixin searchImageSection-mixin-max-xl() {
+}
 // ************************************************** Faq Section ****************************************
 [data-page-name="faqSection"] {
     &.faqSection {
@@ -973,4 +988,7 @@
 
 // Large devices (desktops, less than 1200px)
 @mixin faqSection-mixin-max-lg() {
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin faqSection-mixin-max-xl() {
 }
